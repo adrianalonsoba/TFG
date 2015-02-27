@@ -7,9 +7,9 @@ var myJsonDatasource = function (settings, updateCallback) {
 		//updateCallback(newData);
 
 	    newData= $.getJSON("package.json", function(data) {
-	        console.log(data['version']);
+	        updateCallback(data);
 	    });
-	    updateCallback(newData);
+	    
 		
 	}
 

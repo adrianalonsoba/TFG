@@ -1,0 +1,19 @@
+-estatico-
+
+elijo 3 o 4 variables, commits autores, ficheros, las represento teniendo en cuenta el numero, y lo que se han modificdado en el ultimo mes, año semana, coger cual de las tres variables quiero mostrar al elegir el widget
+
+-dinamico-
+
+coger sparkline y mostrar algun dato del evolutionary.
+
+
+-siguiente-
+
+combinar los 2 json en un mismo widget.
+
+
+-mirar la biblioteca grafica-
+
+http://www.highcharts.com/
+
+

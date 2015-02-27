@@ -46,7 +46,7 @@ freeboard.loadWidgetPlugin({
         {
             name: "the_text",
             display_name: "Titulo",
-            type: "text"
+            type: "calculated"
         }
     ],
     newInstance: function (settings, newInstanceCallback) {
