@@ -3,10 +3,8 @@ var myJsonDatasource = function (settings, updateCallback) {
 	var currentSettings = settings;
 
 	function getData(){
-		//var newData = { hello : "world! it's " + new Date().toLocaleTimeString() };
-		//updateCallback(newData);
 
-	    newData= $.getJSON("package.json", function(data) {
+	    newData= $.getJSON("utilities/scm-static.json", function(data) {
 	        updateCallback(data);
 	    });
 	    
@@ -37,7 +35,8 @@ var myJsonDatasource = function (settings, updateCallback) {
 		clearInterval(refreshTimer);
 		refreshTimer=undefined;
 	}
-	createRefreshTimer(1);
+	//createRefreshTimer(1);
+	getData();
 
 
 };
