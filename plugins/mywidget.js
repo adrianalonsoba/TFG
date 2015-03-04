@@ -27,19 +27,19 @@ var myTextWidget = function (settings) {
     self.onCalculatedValueChanged = function(settingName, newValue){
     	if(settingName == "datos"){
             if(currentSettings.variable=='commits'){
-                $(myTextElement).html('<p>Commits totales:'+newValue.commits+'<br>'+
+                $(myTextElement).html('<p id="parf">Commits totales:'+newValue.commits+'<br>'+
                                       'Commits útimo mes:'+newValue.commits_30+'<br>'+
                                       'Commits útimo año:'+newValue.commits_365+'<br>'+
                                       'Commits útima semana:'+newValue.commits_7+'<br>'+
                                       'Commiters:'+newValue.committers+'</p>');
 
             }else if(currentSettings.variable=='autores'){
-                $(myTextElement).html('<p>Autores totales:'+newValue.authors+'<br>'+
+                $(myTextElement).html('<p id="parf" >Autores totales:'+newValue.authors+'<br>'+
                                       'Autores útimo mes:'+newValue.authors_30+'<br>'+
                                       'Autores útimo año:'+newValue.authors_365+'<br>'+
                                       'Autores útima semana:'+newValue.authors_7+'</p>');
             }else if(currentSettings.variable=='ficheros'){
-                $(myTextElement).html('<p>Ficheros totales:'+newValue.files+'<br>'+
+                $(myTextElement).html('<p id="parf">Ficheros totales:'+newValue.files+'<br>'+
                                       'Ficheros útimo mes:'+newValue.files_30+'<br>'+
                                       'Ficheros útimo año:'+newValue.files_365+'<br>'+
                                       'Ficheros útima semana:'+newValue.files_7+'</p>');
