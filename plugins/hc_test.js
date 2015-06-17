@@ -66,10 +66,10 @@ var hcTestWidget = function (settings) {
     self.getHeight = function(){
 
     	if(currentSettings.size == "big"){
-    		return 2;
+    		return 6;
 
     	}else{
-    		return 1;
+    		return 3;
     	}
     }
 
